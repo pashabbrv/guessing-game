@@ -21,9 +21,10 @@ class GuessingGame {
     }
 
     greater() {
-        this.min = this.currentGuess;
+        this.min = this.currentGuess + 1;
         this.currentGuess = Math.floor((this.min + this.max) / 2);
     }
 }
 
 module.exports = GuessingGame;
+
